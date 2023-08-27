@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav li {
+            display: inline;
+            padding: 30px 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="{% url 'hello' %}">hello</a></li>
+            <li><a href="{% url 'adduser' %}">Add User</a></li>
+            <li><a href="{% url 'users' %}">All User</a></li>
+        </ul>
+    </nav>
+    
+    <h1>"Welcome to Django Assignment"</h1>
+
+</body>
+</html>    
